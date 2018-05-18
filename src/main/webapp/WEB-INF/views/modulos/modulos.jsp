@@ -14,6 +14,9 @@
         <link rel="stylesheet" href="<c:url value="/resources/css/style.css"/>"/>
     </head>
     <body>
+        <jsp:include page="../layouts/menu.jsp"></jsp:include>
+        <hr/>
+        
         <h1 class="color">Listado de Modulos</h1>
         <ul>
             <li> ID = <c:out value="${id}" /> </li>

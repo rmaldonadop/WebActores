@@ -12,6 +12,7 @@
     </head>
     <body>
         
+        <jsp:include page="../layouts/menu.jsp"></jsp:include>
         <hr/>
         
         <h1>Hello World!</h1>
