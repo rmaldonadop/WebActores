@@ -19,7 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class ModulosController {
     
     @RequestMapping(value="/modulos")
-    public ModelAndView moodulos(HttpServletRequest request){
+    public ModelAndView modulos(HttpServletRequest request){
         
         
         String id = request.getParameter("id");
@@ -29,5 +29,23 @@ public class ModulosController {
         mv.addObject("id", id);
         mv.addObject("id2", id2);
         return mv;
+    }
+    
+    @RequestMapping(value="/modulo1")
+    public ModelAndView modulo1 (){
+        
+        return new ModelAndView("modulos/modulo1");
+    }
+    
+    @RequestMapping(value="/modulo2")
+    public ModelAndView modulo2 (){
+        
+        return new ModelAndView("modulos/modulo2");
+    }
+    
+    @RequestMapping(value="/modulo3")
+    public ModelAndView modulo3 (){
+        
+        return new ModelAndView("modulos/modulo3");
     }
 }
