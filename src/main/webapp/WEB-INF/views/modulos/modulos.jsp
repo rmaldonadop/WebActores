@@ -30,8 +30,8 @@
     <div class="container">
 
       <!-- Page Heading -->
-      <h1 class="my-4">Page Heading
-        <small>Secondary Text</small>
+      <h1 class="my-4">Modulos
+        <small>Listado</small>
       </h1>
 
       <!-- Project One -->
@@ -42,9 +42,9 @@
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Project One</h3>
+          <h3>Modulo 1</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-          <a class="btn btn-primary" href="#">View Project</a>
+          <a class="btn btn-primary" href="#">Ir al modulo</a>
         </div>
       </div>
       <!-- /.row -->
@@ -59,7 +59,7 @@
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Project Two</h3>
+          <h3>Modulo 2</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
           <a class="btn btn-primary" href="#">View Project</a>
         </div>
@@ -76,7 +76,7 @@
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Project Three</h3>
+          <h3>Modulo 3</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
           <a class="btn btn-primary" href="#">View Project</a>
         </div>

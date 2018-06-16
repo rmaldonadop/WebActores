@@ -24,7 +24,7 @@
         <jsp:include page="../layouts/menu.jsp"></jsp:include>
 
         <!-- Header with Background Image -->
-        <header class="business-header" style="background-image: url('resources/images/encabezado.png');" >
+        <header class="business-header">
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
