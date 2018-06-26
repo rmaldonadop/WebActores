@@ -1,58 +1,30 @@
 //variables principales canvas
-var canvas = document.getElementById("lienzo3");
+var canvas = document.getElementById("lienzo1");
 var ctx = canvas.getContext("2d");
 
 //objetos
-var mensajero1 = {nombre: "Mensajero 1", x: 300, y: 100};
-var mensajero2 = {nombre: "Mensajero 2", x: 300, y: 250};
-var mensajero3 = {nombre: "Mensajero 3", x: 300, y: 400};
-var receptor = {nombre: "Receptor", x: 700, y: 250};
+var actor1 = {nombre: "Actor 1", x: 300, y: 200};
+var actor2 = {nombre: "Actor 2", x: 550, y: 200};
+var actor3 = {nombre: "Actor 3", x: 800, y: 100};
+var actor4 = {nombre: "Actor 4", x: 800, y: 300};
+var actor5 = {nombre: "Actor 5", x: 550, y: 400};
 
-var mensaje1 = {xinicial: 350, yinicial:70, x: 350,y: 70,velocidad: 3, mensajes: 1, envios: 0};
-var mensaje2 = {xinicial: 350, yinicial:220, x: 350,y: 220,velocidad: 3, mensajes: 1, envios: 0};
-var mensaje3 = {xinicial: 350, yinicial:400, x: 350,y: 400,velocidad: 3, mensajes: 1, envios: 0};
+var mensaje1 = {xinicial: 350, yinicial:170, x: 350,y: 170,velocidad: 3, mensajes: 1, envios: 0};
+var mensaje2 = {xinicial: 600, yinicial:140, x: 600,y: 140,velocidad: 3, mensajes: 1, envios: 0};
+var mensaje3 = {xinicial: 600, yinicial:230, x: 600,y: 230,velocidad: 3, mensajes: 1, envios: 0};
 
 //variables
 var iniciar = false;
 var imgMensaje = document.getElementById("mensaje");
 
 function loadModulo(){
-    dibujarModulo3();
+    dibujarModulo1();
     dibujarMensaje(mensaje1);
     dibujarMensaje(mensaje2);
     dibujarMensaje(mensaje3);
 }
 
-//boton iniciar
-document.getElementById("btnIniciar").addEventListener("click", function() {
-    if(iniciar){
-        window.clearInterval(intervalo);
-        this.value = "Continuar";
-        iniciar = false;
-    }
-    else{
-        mensaje1.mensajes = document.getElementById("actor1").value;
-        mensaje2.mensajes = document.getElementById("actor2").value;
-        mensaje3.mensajes = document.getElementById("actor3").value;
-        intervalo = window.setInterval(function(){frameLoop();},1000/55);
-        this.value = "Pausar";
-        iniciar = true;
-    }
-});
-
-//boton reiniciar
-document.getElementById("btnReiniciar").addEventListener("click", function() {
-    window.clearInterval(intervalo);
-    canvas.width = canvas.width;
-    loadModulo();
-    resetearMensaje(mensaje1);
-    resetearMensaje(mensaje2);
-    resetearMensaje(mensaje3);
-    var btn = document.getElementById("btnIniciar");
-    btn.value = "Iniciar";
-    iniciar = false;
-    
-});
+//botones
 
 //funciones
 function dibujarActor(actor) {
@@ -129,22 +101,17 @@ function moverMensaje(msj, tox, toy) {
     }
 }
 
-function dibujarModulo3() {
+function dibujarModulo1() {
     //dibujar actores
-    dibujarActor(mensajero1);
-    dibujarActor(mensajero2);
-    dibujarActor(mensajero3);
-    dibujarActor(receptor);
+    dibujarActor(actor1);
+    dibujarActor(actor2);
+    dibujarActor(actor3);
+    dibujarActor(actor4);
     
     //dibujar flechas
-    fechaSegmentada(350,100,660,230);
-    fechaSegmentada(350,250,650,250);
-    fechaSegmentada(350,400,660,270);
-    
-    //dibujar mensajes
-    //ctx.drawImage(imgMensaje, 350, 70);
-    //ctx.drawImage(imgMensaje, 350, 220);
-    //ctx.drawImage(imgMensaje, 350, 400);
+    fechaSegmentada(350,200,500,200);
+    fechaSegmentada(600,190,750,100);
+    fechaSegmentada(600,210,750,300);
 }
 
 function resetearMensaje(msj){

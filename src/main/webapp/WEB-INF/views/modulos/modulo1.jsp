@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="<c:url value="/resources/css/estilos.css"/>">
         
     </head>
-    <body>
+    <body  onload="loadModulo()">
         <!-- Navegacion -->
         <jsp:include page="../layouts/menu.jsp"></jsp:include>
         

@@ -50,7 +50,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12 rounded" style="border: 1px solid; height: 500px;">
-                    <canvas id="lienzo1" width="1150" height="500" class="col-md-12">Este navegador no soporta canvas</canvas>
+                    <canvas id="lienzo2" width="1150" height="500" class="col-md-12">Este navegador no soporta canvas</canvas>
                     <img src="<c:url value="/resources/images/mensaje.png"/>" id="mensaje" style="display: none">
                     <script src="<c:url value="/resources/js/modulo2.js"/>" </script>
                 </div>
