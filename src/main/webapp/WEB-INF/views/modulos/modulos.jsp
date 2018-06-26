@@ -37,12 +37,14 @@
       <!-- Project One -->
       <div class="row">
         <div class="col-md-7">
-          <a href="#">
+          <a href="<c:url value="/modulo1"/>">
             <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Modulo 1</h3>
+          <h3>Modulo 1:
+              <small>Reacción a mensaje</small>
+          </h3>
           <p>En el modelo de actores cuando un actor recibe un mensaje, este básicamente puede tomar tres acciones: 
               enviar un mensaje, crear un nuevo actor o definir como procesar el siguiente mensaje. </p>
           <p>En este modulo, podrás apreciar como se comporta un actor al tomar alguna de estas decisiones.</p>
@@ -56,12 +58,14 @@
       <!-- Project Two -->
       <div class="row">
         <div class="col-md-7">
-          <a href="#">
+          <a href="<c:url value="/modulo2"/>">
             <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Modulo 2</h3>
+          <h3>Modulo 2:
+              <small>Creación y comportamiento</small>
+          </h3>
           <p>Cada actor en el modelo tiene características básicas en su composición y desempeñan un comportamiento en base a ellas.</p>
           <p>En este modulo, podrás crear tus propios actores y observar su comportamiento de acuerdo a tus especificaiones</p>
           <a class="btn btn-primary" href="<c:url value="/modulo2"/>">Ir al modulo</a>
@@ -79,7 +83,9 @@
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Modulo 3</h3>
+          <h3>Modulo 3:
+              <small>Buzón de mensajes</small>
+          </h3>
           <p>Uno de los elementos básicos de los actores es que estos poseen un buzón, en donde cada uno de ellos almacena los mensajes 
               recibidos para luego procesarlos.</p>
           <p>En este modulo, observarás como se comporta el buzón de mensajes de un actor al recibir multiples mensajes a la vez.</p>
@@ -94,16 +100,18 @@
       <div class="row">
 
         <div class="col-md-7">
-          <a href="#">
+          <a href="<c:url value="/modulo4"/>">
             <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Modulo 4</h3>
+          <h3>Modulo 4
+            <small>Metodos de sincronización</small>
+          </h3>
           <p>El paso de mensajes entre actores es asincrónica por naturaleza. Sin embargo, existen métodos de sincronización que pueden 
               ser usados para conseguir que los mensajes tengan un orden deseado.</p>
           <p>En este modulo, podrás observar como funcionan dos de los metodos de sincronización mas utilizados.</p>
-          <a class="btn btn-primary" href="#">Ir al modulo</a>
+          <a class="btn btn-primary" href="<c:url value="/modulo4"/>">Ir al modulo</a>
         </div>
       </div>
       <!-- /.row -->

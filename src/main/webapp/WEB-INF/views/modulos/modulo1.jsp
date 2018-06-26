@@ -38,18 +38,21 @@
                 </div>
             </div>
             <hr>
-            <div class="row">
-                <div class="col-md-12 rounded" style="background-color: #f8f8f8; border: 1px solid; height: 40px;">
-                    <a>Opciones: </a>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-outline-primary">opción 1</button>
-                        <button type="button" class="btn btn-outline-primary">opción 2</button>
-                        <button type="button" class="btn btn-outline-primary">opción 3</button>
+            <div class="row rounded" style="background-color: #f8f8f8; border: 1px solid; height: 40px; align-items: center;">
+                <div class="col-md-12">
+                    <span class="badge badge-secondary">Opciones</span>
+                    <div class="btn-group col-md-8">
+                        <input type="button" class="btn btn-outline-primary" id="op1" value="Opcion 1" style="width: 100px">
+                        <input type="button" class="btn btn-outline-primary" id="op2" value="Opcion 2" style="width: 100px">
+                        <input type="button" class="btn btn-outline-primary" id="op3" value="Opcion 3" style="width: 100px">
                     </div> 
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 rounded" style="background-color: #f8f8f8; border: 1px solid; height: 500px;">
+                <div class="col-md-12 rounded" style="border: 1px solid; height: 500px;">
+                    <canvas id="lienzo1" width="1150" height="500" class="col-md-12">Este navegador no soporta canvas</canvas>
+                    <img src="<c:url value="/resources/images/mensaje.png"/>" id="mensaje" style="display: none">
+                    <script src="<c:url value="/resources/js/modulo1.js"/>" </script>
                 </div>
             </div>
             

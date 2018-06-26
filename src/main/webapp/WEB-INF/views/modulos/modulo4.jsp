@@ -1,6 +1,6 @@
 <%-- 
-    Document   : modulo2
-    Created on : 21-05-2018, 20:00:49
+    Document   : modulo4
+    Created on : 25-06-2018, 22:47:40
     Author     : roberto
 --%>
 
@@ -13,7 +13,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
-        <title>Modulo 2</title>
+        <title>Modulo 1</title>
         
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="<c:url value="/webjars/bootstrap/4.1.0/css/bootstrap.min.css"/>" >
@@ -27,7 +27,7 @@
         <jsp:include page="../layouts/menu.jsp"></jsp:include>
         
         <div class="container">
-            <h2 class="my-4">Modulo 2</h2>
+            <h2 class="my-4">Modulo 4</h2>
             
             <div class="row">
                 <div class="col-md-12 rounded" style="background-color: #f8f8f8; border: 1px solid; height: 150px;">
@@ -52,7 +52,7 @@
                 <div class="col-md-12 rounded" style="border: 1px solid; height: 500px;">
                     <canvas id="lienzo1" width="1150" height="500" class="col-md-12">Este navegador no soporta canvas</canvas>
                     <img src="<c:url value="/resources/images/mensaje.png"/>" id="mensaje" style="display: none">
-                    <script src="<c:url value="/resources/js/modulo2.js"/>" </script>
+                    <script src="<c:url value="/resources/js/modulo4.js"/>" </script>
                 </div>
             </div>
             
@@ -64,4 +64,3 @@
         
     </body>
 </html>
-
