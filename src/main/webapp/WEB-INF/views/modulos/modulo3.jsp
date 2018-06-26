@@ -50,11 +50,11 @@
             <div class="row rounded" style="background-color: #f8f8f8; border: 1px solid; height: 40px; align-items: center;">
                 <div class="col-md-2"><span class="badge badge-secondary">Mensajes por Actor</span></div>
                 <a>Mensajero 1: </a>
-                <div class="col-md-1"><input class="form-control" id="actor1" type="text" placeholder="1" style="width: 50px; height: 30px;"></div>
+                <div class="col-md-1"><input class="form-control" id="actor1" type="text" value="1" style="width: 50px; height: 30px;"></div>
                 <a>Mensajero 2: </a>
-                <div class="col-md-1"><input class="form-control" id="actor2" type="text" placeholder="1" style="width: 50px; height: 30px;"></div>
+                <div class="col-md-1"><input class="form-control" id="actor2" type="text" value="1" style="width: 50px; height: 30px;"></div>
                 <a>Mensajero 3: </a>
-                <div class="col-md-1"><input class="form-control" id="actor3" type="text" placeholder="1" style="width: 50px; height: 30px;"></div>
+                <div class="col-md-1"><input class="form-control" id="actor3" type="text" value="1" style="width: 50px; height: 30px;"></div>
             </div>
             <div class="row">
                 <div class="col-md-12 rounded" style="border: 1px solid; height: 500px;">
@@ -67,7 +67,7 @@
         </div>
         
         <!-- Bootstrap core JavaScript -->
-        <script src="<c:url value="/webjars/jquery/3.3.1/jquery.min.js"/>"</script>
+        <script src="<c:url value="/webjars/jquery/3.3.1/dist/jquery.min.js"/>"</script>
         <script src="<c:url value="/webjars/bootstrap/4.1.0/js/bootstrap.min.js"/>"</script>
     </body>
 </html>

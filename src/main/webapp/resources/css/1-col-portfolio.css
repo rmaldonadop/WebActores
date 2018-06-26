@@ -17,3 +17,15 @@ body {
 .pagination {
   margin-bottom: 15px;
 }
+
+p {
+    text-align: justify;
+}
+
+image {
+    border: 5px solid;
+}
+
+.img-fluid {
+    border: 3px solid;
+}

@@ -43,8 +43,10 @@
         </div>
         <div class="col-md-5">
           <h3>Modulo 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-          <a class="btn btn-primary" href="#">Ir al modulo</a>
+          <p>En el modelo de actores cuando un actor recibe un mensaje, este básicamente puede tomar tres acciones: 
+              enviar un mensaje, crear un nuevo actor o definir como procesar el siguiente mensaje. </p>
+          <p>En este modulo, podrás apreciar como se comporta un actor al tomar alguna de estas decisiones.</p>
+          <a class="btn btn-primary" href="<c:url value="/modulo1"/>">Ir al modulo</a>
         </div>
       </div>
       <!-- /.row -->
@@ -60,8 +62,9 @@
         </div>
         <div class="col-md-5">
           <h3>Modulo 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-          <a class="btn btn-primary" href="#">View Project</a>
+          <p>Cada actor en el modelo tiene características básicas en su composición y desempeñan un comportamiento en base a ellas.</p>
+          <p>En este modulo, podrás crear tus propios actores y observar su comportamiento de acuerdo a tus especificaiones</p>
+          <a class="btn btn-primary" href="<c:url value="/modulo2"/>">Ir al modulo</a>
         </div>
       </div>
       <!-- /.row -->
@@ -71,14 +74,16 @@
       <!-- Project Three -->
       <div class="row">
         <div class="col-md-7">
-          <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+          <a href="<c:url value="/modulo3"/>">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="<c:url value="/resources/images/miniatura-modulo3.png"/>" alt="">
           </a>
         </div>
         <div class="col-md-5">
           <h3>Modulo 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-          <a class="btn btn-primary" href="#">View Project</a>
+          <p>Uno de los elementos básicos de los actores es que estos poseen un buzón, en donde cada uno de ellos almacena los mensajes 
+              recibidos para luego procesarlos.</p>
+          <p>En este modulo, observarás como se comporta el buzón de mensajes de un actor al recibir multiples mensajes a la vez.</p>
+          <a class="btn btn-primary" href="<c:url value="/modulo3"/>">Ir al modulo</a>
         </div>
       </div>
       <!-- /.row -->
@@ -94,9 +99,11 @@
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Project Four</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-          <a class="btn btn-primary" href="#">View Project</a>
+          <h3>Modulo 4</h3>
+          <p>El paso de mensajes entre actores es asincrónica por naturaleza. Sin embargo, existen métodos de sincronización que pueden 
+              ser usados para conseguir que los mensajes tengan un orden deseado.</p>
+          <p>En este modulo, podrás observar como funcionan dos de los metodos de sincronización mas utilizados.</p>
+          <a class="btn btn-primary" href="#">Ir al modulo</a>
         </div>
       </div>
       <!-- /.row -->
@@ -104,7 +111,7 @@
       <hr>
 
       <!-- Pagination -->
-      <ul class="pagination justify-content-center">
+      <ul class="pagination justify-content-center" style="visibility: hidden">
         <li class="page-item">
           <a class="page-link" href="#" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span>
@@ -137,7 +144,7 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="<c:url value="/webjars/jquery/3.3.1/jquery.min.js"/>"</script>
+    <script src="<c:url value="/webjars/jquery/3.3.1/dist/jquery.min.js"/>"</script>
     <script src="<c:url value="/webjars/bootstrap/4.1.0/js/bootstrap.min.js"/>"</script>
 
   </body>

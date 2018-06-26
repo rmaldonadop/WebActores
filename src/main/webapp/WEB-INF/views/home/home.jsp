@@ -28,7 +28,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
-                <h1 class="display-3 text-center text-white mt-4">Modelo de Actores</h1>
+                  <h1 class="display-3 text-center text-white mt-4 font-weight-bold">Modelo de Actores</h1>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@
         </footer>
 
         <!-- Bootstrap core JavaScript -->
-        <script src="<c:url value="/webjars/jquery/3.3.1/jquery.min.js"/>"</script>
+        <script src="<c:url value="/webjars/jquery/3.3.1/dist/jquery.min.js"/>"</script>
         <script src="<c:url value="/webjars/bootstrap/4.1.0/js/bootstrap.min.js"/>"</script>
 
     </body>

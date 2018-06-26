@@ -4,8 +4,8 @@ var ctx = canvas.getContext("2d");
 
 //objetos
 var mensaje1 = {xinicial: 350, yinicial:70, x: 350,y: 70,velocidad: 3, mensajes: 1, envios: 0};
-var mensaje2 = {xinicial: 350, yinicial:220, x: 350,y: 220,velocidad: 3, mensajes: 2, envios: 0};
-var mensaje3 = {xinicial: 350, yinicial:400, x: 350,y: 400,velocidad: 3, mensajes: 3, envios: 0};
+var mensaje2 = {xinicial: 350, yinicial:220, x: 350,y: 220,velocidad: 3, mensajes: 1, envios: 0};
+var mensaje3 = {xinicial: 350, yinicial:400, x: 350,y: 400,velocidad: 3, mensajes: 1, envios: 0};
 
 //variables
 var iniciar = false;
@@ -18,7 +18,6 @@ function loadModulo(){
     ctx.drawImage(imgMensaje, 350, 400);
 }
 
-
 //boton iniciar
 document.getElementById("btnIniciar").addEventListener("click", function() {
     if(iniciar){
@@ -27,6 +26,9 @@ document.getElementById("btnIniciar").addEventListener("click", function() {
         iniciar = false;
     }
     else{
+        mensaje1.mensajes = document.getElementById("actor1").value;
+        mensaje2.mensajes = document.getElementById("actor2").value;
+        mensaje3.mensajes = document.getElementById("actor3").value;
         intervalo = window.setInterval(function(){frameLoop();},1000/55);
         this.value = "Pausar";
         iniciar = true;
@@ -44,11 +46,6 @@ document.getElementById("btnReiniciar").addEventListener("click", function() {
     var btn = document.getElementById("btnIniciar");
     btn.value = "Iniciar";
     iniciar = false;
-    
-});
-
-//boton modificar mensajes
-document.getElementById("btnMensajes").addEventListener("click", function() {
     
 });
 
@@ -85,7 +82,7 @@ function fechaSegmentada(fromx, fromy, tox, toy) {
 
 function dibujarMensaje(msj) {
     ctx.save();
-    ctx.drawImage(mensaje, msj.x, msj.y);
+    ctx.drawImage(imgMensaje, msj.x, msj.y);
     ctx.restore();
 }
 
@@ -95,29 +92,35 @@ function moverMensaje(msj, tox, toy) {
     var distanciay = Math.abs(toy-msj.yinicial);
     var vely = distanciay/tiempox;
     
-    //movimiento en y
-    if ((toy-msj.yinicial)>0){    //hacia abajo
-        if (msj.y > toy)
-            msj.y = msj.yinicial;
-        msj.y += vely;
-    }
-    if ((toy-msj.yinicial)<0){    //hacia arriba
-        if (msj.y < toy)
-            msj.y = msj.yinicial;
-        msj.y -= vely;
+    if(msj.x === msj.xinicial && msj.mensajes >= msj.envios){
+        msj.envios += 1;
     }
     
-    //movimiento en x
-    if ((tox-msj.xinicial)>0){  //hacia derecha
-        if(msj.x > tox) 
-            msj.x = msj.xinicial;
-        msj.x +=  msj.velocidad;
-    }
-    
-    if ((tox-msj.xinicial)<0){  //hacia izquierda
-        if(msj.x < tox) 
-            msj.x = msj.xinicial;
-        msj.x -=  msj.velocidad;
+    if (msj.mensajes >= msj.envios){
+        //movimiento en y
+        if ((toy-msj.yinicial)>0){    //hacia abajo
+            msj.y += vely;
+            if (msj.y > toy)
+                msj.y = msj.yinicial;
+        }
+        if ((toy-msj.yinicial)<0){    //hacia arriba
+            msj.y -= vely;
+            if (msj.y < toy)
+                msj.y = msj.yinicial;
+        }
+
+        //movimiento en x
+        if ((tox-msj.xinicial)>0){  //hacia derecha
+            msj.x +=  msj.velocidad;
+            if(msj.x > tox) 
+                msj.x = msj.xinicial;
+        }
+
+        if ((tox-msj.xinicial)<0){  //hacia izquierda
+            msj.x -=  msj.velocidad;
+            if(msj.x < tox) 
+                msj.x = msj.xinicial;
+        }
     }
 }
 
@@ -142,6 +145,7 @@ function dibujarModulo3() {
 function resetearMensaje(msj){
     msj.x = msj.xinicial;
     msj.y = msj.yinicial;
+    msj.envios = 0;
 }
 
 function frameLoop() {

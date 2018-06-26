@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,7 +23,7 @@
           <!-- /.container -->
         </footer>
         
-        <script src="<c:url value="/webjars/jquery/3.3.1/jquery.min.js"/>"</script>
+        <script src="<c:url value="/webjars/jquery/3.3.1/dist/jquery.min.js"/>"</script>
         <script src="<c:url value="/webjars/bootstrap/4.1.0/js/bootstrap.min.js"/>"</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     </body>
