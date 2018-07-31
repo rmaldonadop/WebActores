@@ -31,14 +31,7 @@
 
       <div class="row">
 
-        <div class="col-lg-3">
-          <h1 class="my-4">Acerca del modelo</h1>
-          <div class="list-group">
-            <a href="#" class="list-group-item active">informacion 1</a>
-            <a href="#" class="list-group-item">informacion 2</a>
-            <a href="#" class="list-group-item">informacion 3</a>
-          </div>
-        </div>
+        <jsp:include page="../modelo/indice_lateral.jsp"></jsp:include>
         <!-- /.col-lg-3 -->
 
         <div class="col-lg-9">
