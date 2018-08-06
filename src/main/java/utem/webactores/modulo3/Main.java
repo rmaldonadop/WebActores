@@ -8,6 +8,9 @@ package utem.webactores.modulo3;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import java.io.IOException;
+import org.springframework.boot.SpringApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+import utem.webactores.config.SpringExtension;
 
 /**
  *
@@ -22,24 +25,27 @@ public class Main {
         
         final ActorSystem system = ActorSystem.create("modulo-3");
         
+        ConfigurableApplicationContext applicationContext = SpringApplication.run(ActorSystem.class);
+        ActorSystem actorSystem = applicationContext.getBean(ActorSystem.class);
+        
+        final ActorRef receptor = actorSystem.actorOf(SpringExtension.SpringExtProvider.get(actorSystem).props("ActorReceptor"), "receptor");
+        
+        final ActorRef mensajero1 = actorSystem.actorOf(SpringExtension.SpringExtProvider.get(actorSystem).props("ActorMensajeror"), "mensajero-1");
+        final ActorRef mensajero2 = actorSystem.actorOf(SpringExtension.SpringExtProvider.get(actorSystem).props("ActorMensajeror"), "mensajero-2");
+        final ActorRef mensajero3 = actorSystem.actorOf(SpringExtension.SpringExtProvider.get(actorSystem).props("ActorMensajeror"), "mensajero-3");
+        
+        mensajero1.tell(1, receptor);
+        mensajero2.tell(1, receptor);
+        mensajero3.tell(1, receptor);
+        
         try {
-            
-            final ActorRef receptor = system.actorOf(ActorReceptor.props(), "receptor");
-            
-            final ActorRef mensajero1 = system.actorOf(ActorMensajero.props(), "mensajero-1");
-            final ActorRef mensajero2 = system.actorOf(ActorMensajero.props(), "mensajero-2");
-            final ActorRef mensajero3 = system.actorOf(ActorMensajero.props(), "mensajero-3");
-            
-            mensajero1.tell(1, receptor);
-            mensajero2.tell(1, receptor);
-            mensajero3.tell(1, receptor);
             
             System.out.println(">>> Press ENTER to exit <<<");
             System.in.read();
             
         } catch (IOException ioe) {
         } finally {
-            system.terminate();
+            actorSystem.terminate();
         }
     }
     

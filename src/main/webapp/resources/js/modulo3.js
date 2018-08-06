@@ -43,11 +43,11 @@ document.getElementById("btnIniciar").addEventListener("click", function() {
 //boton reiniciar
 document.getElementById("btnReiniciar").addEventListener("click", function() {
     window.clearInterval(intervalo);
-    canvas.width = canvas.width;
-    loadModulo();
     resetearMensaje(mensaje1);
     resetearMensaje(mensaje2);
     resetearMensaje(mensaje3);
+    canvas.width = canvas.width;
+    loadModulo();
     var btn = document.getElementById("btnIniciar");
     btn.value = "Iniciar";
     iniciar = false;

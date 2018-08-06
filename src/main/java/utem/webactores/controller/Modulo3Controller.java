@@ -7,6 +7,7 @@ package utem.webactores.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
@@ -17,10 +18,9 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class Modulo3Controller {
     
-    @RequestMapping(value="/modulo3")
+    @RequestMapping(value="/modulo3", method = RequestMethod.GET)
     public ModelAndView modulo3() {
         
         return new ModelAndView("modulos/modulo3");
     } 
-   
 }

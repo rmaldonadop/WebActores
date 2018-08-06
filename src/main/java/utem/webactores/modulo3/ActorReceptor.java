@@ -9,11 +9,16 @@ import akka.actor.AbstractActor;
 import akka.actor.Props;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
+import javax.inject.Named;
+import org.springframework.context.annotation.Scope;
 
 /**
  *
  * @author roberto
  */
+
+@Named("ActorReceptor")
+@Scope("prototype")
 public class ActorReceptor extends AbstractActor {
 
     static public Props props() {
