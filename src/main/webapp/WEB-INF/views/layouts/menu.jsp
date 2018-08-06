@@ -31,7 +31,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<c:url value="/actor_model"/>">El Modelo</a>
+                                <a class="nav-link" href="<c:url value="/actor-model"/>">El Modelo</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="<c:url value="/modulos"/>">Simuladores</a>

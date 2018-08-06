@@ -31,7 +31,7 @@
 
       <div class="row">
 
-        <jsp:include page="../modelo/indice_lateral.jsp"></jsp:include>
+        <jsp:include page="../modelo/indice-lateral.jsp"></jsp:include>
         <!-- /.col-lg-3 -->
 
         <div class="col-lg-9">
@@ -65,7 +65,7 @@
                           respuesta.</p></li>
               </ul>
               <p style="text-align: center">
-                  <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/mensajeria_tipo_RPC.png"/>">
+                  <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/mensajeria-tipo-RPC.png"/>">
               </p>
               <p>En la figura anterior, se muestra como un actor cliente solicita cotizaciones de múltiples servicios competidores, usando la comunicación 
                   tipo RPC. Las flechas segmentadas entre el cliente y los servicios representan los mensajes, mientras que las flechas verticales 
@@ -89,9 +89,47 @@
                   encuentran en un pasillo angosto y cada una intenta ser cortés dejando pasar al otro, pero, finalmente, terminan balanceándose sin 
                   realizar ningún progreso al no saber quién pasara primero ya que ambos cambian su estado de la misma manera al mismo tiempo.</p>
               <p><b>b. Restricciones locales de sincronización</b></p>
+              <p>La asincronía es inherente en los sistemas distribuidos y móviles. Una consecuencia de la asincronía, es que el número de ordenamientos 
+                  posibles en los que puede llegar un mensaje, es exponencial con respecto al número de mensaje que están pendientes en cualquier momento 
+                  (mensajes que han sido enviados, pero no han sido recibidos). Debido a que un remitente puede desconocer el estado del actor al cual 
+                  está enviando un mensaje, es posible que el destinatario no se encuentre en un estado en el cual pueda procesar el mensaje que está 
+                  recibiendo. Por ejemplo, una cola de impresión puede no tener trabajo cuando una impresora lo solicita.</p>
+              <p>Continuando con el ejemplo de la cola de impresión. Supongamos que un mensaje “obtener” de una impresora inactiva, llega a su cola de 
+                  impresión cuando esta no tiene trabajos para devolver a la impresora. Una forma de solucionar este problema es que el administrador de 
+                  la aplicación rehaga la solicitud. Esto provoca que ahora la impresora necesita verificar constantemente su cola de impresión hasta que 
+                  esta finalmente tenga un trabajo para la impresora. Esta técnica se conoce como “espera activa” (bussy waiting); la espera activa puede 
+                  ser costosa, impidiendo al actor en espera, realizar algún otro trabajo mientras “espera”, generando un tráfico de mensajes innecesario. 
+                  Una alternativa es almacenar temporalmente el mensaje “obtener” de la cola de impresión para su procesamiento diferido. El efecto de 
+                  almacenar temporalmente es cambiar el orden en el cual los mensajes son procesados de manera que garantice que la cantidad de mensajes 
+                  que se colocan en la cola de impresión sea siempre mayor que el número de mensajes de “obtener” procesados por la cola de impresión.</p>
+              <p style="text-align: center">
+                  <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/restriccion-local.png"/>">
+              </p>
+              <p><i>En la figura 1.3, se muestra la comunicación del archivo de un actor con un cliente que está usando restricciones locales de sincronización. 
+                  Las flechas verticales describen la línea de tiempo de vida del actor y las flechas punteadas representan los mensajes. Las descripciones 
+                  dentro de los círculos representan los mensajes que el archivo del actor puede aceptar en ese estado particular.</i></p>
+              <p>Si los mensajes pendientes son almacenados explícitamente dentro del cuerpo de un actor, el código especificando la funcionalidad (el cómo o 
+                  la representación) del actor es mezclado con la lógica que determina el orden con el cual el actor procesa el mensaje (el cuándo). Esta mezcla 
+                  viola el principio del software de separación de preocupaciones (separation of concerns). Los investigadores han propuesto varios constructores 
+                  para permitir a los programadores especificar el ordenamiento correcto en una forma modular y abstracta, específicamente, como formular la 
+                  lógica (predicado) sobre el estado de un actor y el tipo de mensaje. Muchos lenguajes de actores y marcos de trabajo proporcionan tales constructores.</p>
+              <p><b>Patrones de Programación de Actores</b></p>
+              <p>Existen dos patrones programación paralela comúnmente usados: pipeline y dividir y conquistar (divide and conquer). </p>
+              <p><b>Pipeline:</b> Consiste en una cadena de procesos conectados de tal forma que la salida de cada proceso es la entrada del próximo. Un ejemplo claro 
+                  de pipeline es el procesamiento de una red de imágenes, en la cual una secuencia de imágenes pasa a través de distintas etapas de filtrado y 
+                  transformación. La salida de la última etapa es la secuencia de imágenes procesadas.</p>
+              <p style="text-align: center">
+                  <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/patron-pipeline.png"/>">
+              </p>
+              <p><b>Dividir y vencer:</b> Método que consiste en dividir un problema en dos o más subproblemas de igual o similar tipo. Dicha división continua 
+                  hasta que los subprocesos llegan a ser lo suficientemente sencillos como para ser resueltos directamente. Luego las soluciones de los subproblemas 
+                  se combinan para dar solución al problema inicial.</p>
+              <p style="text-align: center">
+                  <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/patron-dividir-vencer.png"/>">
+              </p>
               <hr>
-              <a href="#" class="btn btn-success">Anterior</a>
-              <a href="#" class="btn btn-success">Siguiente</a>
+              <a href="<c:url value="/caracteristicas"/>" class="btn btn-success">Anterior</a>
+              <a href="<c:url value="/propiedades-semanticas"/>" class="btn btn-success">Siguiente</a>
             </div>
           </div>
           <!-- /.card -->

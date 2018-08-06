@@ -31,7 +31,7 @@
 
       <div class="row">
 
-        <jsp:include page="../modelo/indice_lateral.jsp"></jsp:include>
+        <jsp:include page="../modelo/indice-lateral.jsp"></jsp:include>
         <!-- /.col-lg-3 -->
 
         <div class="col-lg-9">
@@ -74,7 +74,7 @@
                   permitido enviar mensajes a sí mismos, recibiéndolos y manejándolos más tarde en un paso futuro. Se debe tener en cuenta que el mapeo 
                   de direcciones y actores no es parte del modelo conceptual (aunque es una característica de las implementaciones) (Benjamín Erb, 2012).</p>
               <p style="text-align: center">
-                  <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/esquema_de_actores.png"/>">
+                  <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/esquema-de-actores.png"/>">
               </p>
               <p>La figura 1.1, es un ejemplo de una red de varios actores. Cada actor tiene su propio correo y estado aislado. Basado en el 
                   comportamiento designado, el actor responde a mensajes entrantes ya sea, enviando nuevos mensajes, creando nuevos actores y/o 
@@ -102,7 +102,7 @@
                   en el orden de recepción de mensajes.</p>
               
               <hr>
-              <a href="<c:url value="/conceptos_basicos"/>" class="btn btn-success">Anterior</a>
+              <a href="<c:url value="/conceptos-basicos"/>" class="btn btn-success">Anterior</a>
               <a href="<c:url value="/sincronizacion"/>" class="btn btn-success">Siguiente</a>
             </div>
           </div>

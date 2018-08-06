@@ -39,12 +39,13 @@
 
           <div class="row">
             <div class="col-sm-8">
-              <h2 class="mt-4">What We Do</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
-              <p>
-                <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
-              </p>
+              <h2 class="mt-4">Bienvenido</h2>
+              <p>Esta web a sido desarrollada con la finalidad de ser una fuente de información util y una herramienta de aprendizaje para todo aquel que 
+                  interesado en conocer acerca del modelo de programacion concurrente conocido como: Modelo de Actores</p>
+              <p>En esta web, encontrarás todo lo necesario para entender como funciona el modelo, desde lo mas básico a lo mas complejo. Ademas, tendrás a
+              tu disposición herramientas graficas que muestran como se comportan los "actores" dentro del modelo para así ayudar a su facil comprensión 
+              una vez que domines los conceptos básicos.</p>
+              <p>Espero que todo el material que encuentres aqui te ayude a aprender sobre el modelo, de la manera mas sencilla posible.</p>
             </div>
             <div class="col-sm-4">
               <h2 class="mt-4">Contact Us</h2>
@@ -68,37 +69,37 @@
           <div class="row">
             <div class="col-sm-4 my-4">
               <div class="card">
-                <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+                <img class="card-img-top" src="<c:url value="/resources/images/tarjeta1.png"/>" alt="">
                 <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
+                  <h4 class="card-title">Acerca del modelo</h4>
+                  <p class="card-text">Aprende todo lo que necesitas saber sobre el Modelo de Actores y los conceptos básicos que debes manejar.</p>
                 </div>
                 <div class="card-footer">
-                  <a href="#" class="btn btn-primary">Find Out More!</a>
+                  <a href="<c:url value="/actor-model"/>" class="btn btn-primary">Ir a la pagina</a>
                 </div>
               </div>
             </div>
             <div class="col-sm-4 my-4">
               <div class="card">
-                <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+                <img class="card-img-top" src="<c:url value="/resources/images/tarjeta2.png"/>" alt="">
                 <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
+                  <h4 class="card-title">Experimenta</h4>
+                  <p class="card-text">¿Ya dominas los conceptos? Aprende sobre el comportamiento de los usando alguno de los simuladores gráficos.</p>
                 </div>
                 <div class="card-footer">
-                  <a href="#" class="btn btn-primary">Find Out More!</a>
+                  <a href="<c:url value="/modulos"/>" class="btn btn-primary">Ir a la pagina</a>
                 </div>
               </div>
             </div>
             <div class="col-sm-4 my-4">
               <div class="card">
-                <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+                <img class="card-img-top" src="<c:url value="/resources/images/tarjeta3.png"/>" alt="">
                 <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                  <h4 class="card-title">Java Akka</h4>
+                  <p class="card-text">Aprende mas acerca de la programación de actores en Java a traves de Akka, usando la documentacion oficial.</p>
                 </div>
                 <div class="card-footer">
-                  <a href="#" class="btn btn-primary">Find Out More!</a>
+                  <a href="https://doc.akka.io/docs/akka/2.5/guide/introduction.html#how-to-get-started" class="btn btn-primary">Ir a la pagina</a>
                 </div>
               </div>
             </div>

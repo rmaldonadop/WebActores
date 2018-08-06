@@ -24,6 +24,19 @@ body {
   -o-background-size: cover;
 }
 
+p {
+    text-align: justify;
+}
+
 .card {
   height: 100%;
+}
+
+.card-img-top {
+    border: 2px solid;
+    border-color: #007BFF;
+}
+
+.card-text {
+    text-align: justify;
 }
