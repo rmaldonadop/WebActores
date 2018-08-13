@@ -8,9 +8,9 @@ var mensajero2 = {nombre: "Mensajero 2", x: 300, y: 250};
 var mensajero3 = {nombre: "Mensajero 3", x: 300, y: 400};
 var receptor = {nombre: "Receptor", x: 700, y: 250};
 
-var mensaje1 = {xinicial: 350, yinicial:70, x: 350,y: 70,velocidad: 3, mensajes: 1, envios: 0};
-var mensaje2 = {xinicial: 350, yinicial:220, x: 350,y: 220,velocidad: 3, mensajes: 1, envios: 0};
-var mensaje3 = {xinicial: 350, yinicial:400, x: 350,y: 400,velocidad: 3, mensajes: 1, envios: 0};
+var mensaje1 = {xinicial: 350, yinicial:70, x: 350,y: 70,velocidad: Math.floor(Math.random() * 4) + 2, mensajes: 1, envios: 0};
+var mensaje2 = {xinicial: 350, yinicial:220, x: 350,y: 220,velocidad: Math.floor(Math.random() * 4) + 2, mensajes: 1, envios: 0};
+var mensaje3 = {xinicial: 350, yinicial:400, x: 350,y: 400,velocidad: Math.floor(Math.random() * 4) + 2, mensajes: 1, envios: 0};
 
 //variables
 var iniciar = false;
@@ -90,6 +90,10 @@ function dibujarMensaje(msj) {
     ctx.drawImage(imgMensaje, msj.x, msj.y);
     ctx.restore();
 }
+function resetearPosicion(obj){
+    obj.x = obj.xinicial;
+    obj.y = obj.yinicial;
+}
 
 function moverMensaje(msj, tox, toy) {
     var distanciax = Math.abs(tox-msj.xinicial);
@@ -97,34 +101,38 @@ function moverMensaje(msj, tox, toy) {
     var distanciay = Math.abs(toy-msj.yinicial);
     var vely = distanciay/tiempox;
     
-    if(msj.x === msj.xinicial && msj.mensajes >= msj.envios){
-        msj.envios += 1;
-    }
-    
-    if (msj.mensajes >= msj.envios){
+    if (msj.mensajes > msj.envios){
         //movimiento en y
         if ((toy-msj.yinicial)>0){    //hacia abajo
             msj.y += vely;
-            if (msj.y > toy)
-                msj.y = msj.yinicial;
+            if (msj.y > toy){
+                resetearPosicion(msj);
+                msj.envios += 1;
+            }
         }
         if ((toy-msj.yinicial)<0){    //hacia arriba
             msj.y -= vely;
-            if (msj.y < toy)
-                msj.y = msj.yinicial;
+            if (msj.y < toy){
+                resetearPosicion(msj);
+                msj.envios += 1;
+            }
         }
 
         //movimiento en x
         if ((tox-msj.xinicial)>0){  //hacia derecha
             msj.x +=  msj.velocidad;
-            if(msj.x > tox) 
-                msj.x = msj.xinicial;
+            if(msj.x > tox) {
+                resetearPosicion(msj);
+                msj.envios += 1;
+            }
         }
 
         if ((tox-msj.xinicial)<0){  //hacia izquierda
             msj.x -=  msj.velocidad;
-            if(msj.x < tox) 
-                msj.x = msj.xinicial;
+            if(msj.x < tox) {
+                resetearPosicion(msj);
+                msj.envios += 1;
+            }
         }
     }
 }
@@ -140,11 +148,6 @@ function dibujarModulo3() {
     fechaSegmentada(350,100,660,230);
     fechaSegmentada(350,250,650,250);
     fechaSegmentada(350,400,660,270);
-    
-    //dibujar mensajes
-    //ctx.drawImage(imgMensaje, 350, 70);
-    //ctx.drawImage(imgMensaje, 350, 220);
-    //ctx.drawImage(imgMensaje, 350, 400);
 }
 
 function resetearMensaje(msj){

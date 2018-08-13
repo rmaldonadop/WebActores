@@ -32,21 +32,17 @@
             <div class="row">
                 <div class="col-md-12 rounded" style="background-color: #f8f8f8; border: 1px solid; height: 150px;">
                     <h5>Objetivo:</h5>
-                    <p>objetivos del modulo</p>
+                    <p>Desmostrar las reacciones básicas de un actor al recibir un mensaje.</p>
                     <h5>Descripción:</h5>
                     <p>descripcion resumida del funcionamiento del modulo</p>
                 </div>
             </div>
             <hr>
             <div class="row rounded" style="background-color: #f8f8f8; border: 1px solid; height: 40px; align-items: center;">
-                <div class="col-md-12">
-                    <span class="badge badge-secondary">Opciones</span>
-                    <div class="btn-group col-md-8">
-                        <input type="button" class="btn btn-outline-primary" id="op1" value="Opcion 1" style="width: 100px">
-                        <input type="button" class="btn btn-outline-primary" id="op2" value="Opcion 2" style="width: 100px">
-                        <input type="button" class="btn btn-outline-primary" id="op3" value="Opcion 3" style="width: 100px">
-                    </div> 
-                </div>
+                <div class="col-md-2"><span class="badge badge-secondary">Escribe tu Mensaje</span></div>
+                <a>Mensaje: </a>
+                <div class="col-md-2"><input class="form-control" id="txtMensaje" type="text" value="enviar" style="width: 100px; height: 30px;"></div>
+                <input type="button" class="btn btn-outline-primary" id="btnEnviar" value="Enviar" style="width: 100px">
             </div>
             <div class="row">
                 <div class="col-md-12 rounded" style="border: 1px solid; height: 500px;">
@@ -55,7 +51,6 @@
                     <script src="<c:url value="/resources/js/modulo1.js"/>" </script>
                 </div>
             </div>
-            
         </div>
         
         <!-- Bootstrap core JavaScript -->

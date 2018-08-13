@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col-md-12 rounded" style="background-color: #f8f8f8; border: 1px solid; height: 150px;">
                     <h5>Objetivo:</h5>
-                    <p>objetivos del modulo</p>
+                    <p>Mostrar al usuario cual es la estructura básica un actor y su comportamiento en base a ello.</p>
                     <h5>Descripción:</h5>
                     <p>descripcion resumida del funcionamiento del modulo</p>
                 </div>
@@ -55,7 +55,6 @@
                     <script src="<c:url value="/resources/js/modulo2.js"/>" </script>
                 </div>
             </div>
-            
         </div>
         
         <!-- Bootstrap core JavaScript -->

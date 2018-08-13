@@ -29,12 +29,14 @@
         <div class="container">
             <h2 class="my-4">Modulo 3: Cola de Mensajes</h2>
             
-            <div class="row rounded" style="background-color: #f8f8f8; border: 1px solid; height: 150px;">
+            <div class="row rounded" style="background-color: #f8f8f8; border: 1px solid; height: 200px;">
                 <div class="col-md-12">
-                    <h5>Objetivo:</h5>
-                    <p>objetivos del modulo</p>
-                    <h5>Descripción:</h5>
-                    <p>descripcion resumida del funcionamiento del modulo</p>
+                    <h5><b>Objetivo:</b></h5>
+                    <p>Demostrar el funcionamiento del buzon de mensajes de un actor, cuando recibe multiples mensajes.</p>
+                    <h5><b>Descripción:</b></h5>
+                    <p>En este modulo, puedes definir la cantidad de mensajes que quieres que envie cada actor indicando la cantidad en cada espacio desigano. 
+                    Una vez hecho esto, al presionar Iniciar, cada actor mensajero enviará la cantidad de mensajes indicada al actor recetor, en cual
+                    los almacenara en su buzon segun orden de llegada.</p>
                 </div>
             </div>
             <hr>
@@ -63,7 +65,6 @@
                     <script src="<c:url value="/resources/js/modulo3.js"/>" </script>
                 </div>
             </div>
-            
         </div>
         
         <!-- Bootstrap core JavaScript -->

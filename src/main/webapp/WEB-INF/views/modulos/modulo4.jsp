@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="<c:url value="/resources/css/estilos.css"/>">
         
     </head>
-    <body>
+    <body onload="loadModulo()">
         <!-- Navegacion -->
         <jsp:include page="../layouts/menu.jsp"></jsp:include>
         
@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col-md-12 rounded" style="background-color: #f8f8f8; border: 1px solid; height: 150px;">
                     <h5>Objetivo:</h5>
-                    <p>objetivos del modulo</p>
+                    <p>Mostrar el funcionamiento de los metodos de sincronización de mensajes mas comunes</p>
                     <h5>Descripción:</h5>
                     <p>descripcion resumida del funcionamiento del modulo</p>
                 </div>
@@ -42,9 +42,9 @@
                 <div class="col-md-12">
                     <span class="badge badge-secondary">Opciones</span>
                     <div class="btn-group col-md-8">
-                        <input type="button" class="btn btn-outline-primary" id="op1" value="Opcion 1" style="width: 100px">
-                        <input type="button" class="btn btn-outline-primary" id="op2" value="Opcion 2" style="width: 100px">
-                        <input type="button" class="btn btn-outline-primary" id="op3" value="Opcion 3" style="width: 100px">
+                        <input type="button" class="btn btn-outline-primary" id="btnTipo" value="RCP" style="width: 100px">
+                        <input type="button" class="btn btn-outline-primary" id="btnIniciar" value="Iniciar" style="width: 100px">
+                        <input type="button" class="btn btn-outline-primary" id="btnReiniciar" value="Reiniciar" style="width: 100px">
                     </div> 
                 </div>
             </div>
@@ -55,7 +55,6 @@
                     <script src="<c:url value="/resources/js/modulo4.js"/>" </script>
                 </div>
             </div>
-            
         </div>
         
         <!-- Bootstrap core JavaScript -->
