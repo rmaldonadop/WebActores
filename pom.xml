@@ -55,7 +55,7 @@
                 <scope>runtime</scope>
             </dependency>
 
-            <!-- Servlet Spec -->
+            <!-- Tomcat -->
             <dependency>
                 <groupId>org.apache.tomcat</groupId>
                 <artifactId>tomcat-servlet-api</artifactId>
@@ -92,7 +92,28 @@
                 <artifactId>tomcat-coyote</artifactId>
                 <version>${tomcat.version}</version>
             </dependency>
-
+            
+            <!-- Servlet Spec -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>2.4</version>
+                <scope>provided</scope>
+            </dependency>
+            
+            <dependency>
+                <groupId>javax.servlet.jsp</groupId>
+                <artifactId>jsp-api</artifactId>
+                <version>2.1</version>
+                <scope>provided</scope>
+            </dependency>
+            
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>jstl</artifactId>
+                <version>1.2</version>
+            </dependency>
+            
             <!-- Webjars -->
             <dependency>
                 <groupId>org.webjars</groupId>
@@ -168,6 +189,27 @@
 					<target>${java.version}</target>
 				</configuration>
 			</plugin>
+                        
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-dependency-plugin</artifactId>
+                            <executions>
+                                <execution>
+                                    <phase>package</phase>
+                                    <goals><goal>copy</goal></goals>
+                                    <configuration>
+                                        <artifactItems>
+                                            <artifactItem>
+                                                <groupId>com.github.jsimone</groupId>
+                                                <artifactId>webapp-runner</artifactId>
+                                                <version>8.5.31.0</version>
+                                                <destFileName>webapp-runner.jar</destFileName>
+                                            </artifactItem>
+                                        </artifactItems>
+                                    </configuration>
+                                </execution>
+                            </executions>
+                        </plugin>
 		</plugins>
 	</build>
 </project>
