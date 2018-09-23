@@ -52,14 +52,14 @@
                 <div class="col-md-12 rounded" style="border: 1px solid; height: 500px;">
                     <canvas id="lienzo4" width="1150" height="500" class="col-md-12">Este navegador no soporta canvas</canvas>
                     <img src="<c:url value="/resources/images/mensaje.png"/>" id="mensaje" style="display: none">
-                    <script src="<c:url value="/resources/js/modulo4.js"/>" </script>
+                    <script src="<c:url value="/resources/js/modulo4.js"/>"></script>
                 </div>
             </div>
         </div>
         
         <!-- Bootstrap core JavaScript -->
-        <script src="<c:url value="/webjars/jquery/3.3.1/dist/jquery.min.js"/>"</script>
-        <script src="<c:url value="/webjars/bootstrap/4.1.0/js/bootstrap.min.js"/>"</script>
+        <script src="<c:url value="/webjars/jquery/3.3.1/dist/jquery.min.js"/>"></script>
+        <script src="<c:url value="/webjars/bootstrap/4.1.0/js/bootstrap.min.js"/>"></script>
         
     </body>
 </html>

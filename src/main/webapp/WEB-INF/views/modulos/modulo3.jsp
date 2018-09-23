@@ -39,13 +39,14 @@
                     los almacenara en su buzon segun orden de llegada.</p>
                 </div>
             </div>
+            <li> ID = <c:out value="${id}" /> </li>
             <hr>
             <div class="row rounded" style="background-color: #f8f8f8; border: 1px solid; height: 40px; align-items: center;">
                 <div class="col-md-12">
                     <span class="badge badge-secondary">Opciones</span>
                     <div class="btn-group col-md-8">
-                        <input type="button" class="btn btn-outline-primary" id="btnIniciar" value="Iniciar" style="width: 100px">
-                        <input type="button" class="btn btn-outline-primary" id="btnReiniciar" value="Reiniciar" style="width: 100px">
+                        <button class="btn btn-outline-primary" onclick="location.href='/webActores/modulo3'" id="btnIniciar" value="Iniciar" style="width: 100px">Iniciar</button>
+                        <button class="btn btn-outline-primary" id="btnReiniciar" value="Reiniciar" style="width: 100px">Reiniciar</button>
                     </div> 
                 </div>
             </div>
@@ -62,13 +63,13 @@
                 <div class="col-md-12 rounded" style="border: 1px solid; height: 500px;">
                     <canvas id="lienzo3" width="1150" height="500" class="col-md-12">Este navegador no soporta canvas</canvas>
                     <img src="<c:url value="/resources/images/mensaje.png"/>" id="mensaje" style="display: none">
-                    <script src="<c:url value="/resources/js/modulo3.js"/>" </script>
+                    <script src="<c:url value="/resources/js/modulo3.js"/>"></script>
                 </div>
             </div>
         </div>
-        
+                
         <!-- Bootstrap core JavaScript -->
-        <script src="<c:url value="/webjars/jquery/3.3.1/dist/jquery.min.js"/>"</script>
-        <script src="<c:url value="/webjars/bootstrap/4.1.0/js/bootstrap.min.js"/>"</script>
+        <script src="<c:url value="/webjars/jquery/3.3.1/dist/jquery.min.js"/>"></script>
+        <script src="<c:url value="/webjars/bootstrap/4.1.0/js/bootstrap.min.js"/>"></script>
     </body>
 </html>

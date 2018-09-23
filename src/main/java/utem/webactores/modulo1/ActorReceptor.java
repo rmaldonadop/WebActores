@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package utem.webactores.modulo3;
+package utem.webactores.modulo1;
 
 import akka.actor.AbstractActor;
 import akka.actor.Props;
@@ -17,21 +17,23 @@ import org.springframework.context.annotation.Scope;
  * @author roberto
  */
 
-@Named("ActorReceptorM3")
+@Named("ActorReceptorM1")
 @Scope("prototype")
-public class ActorReceptor extends AbstractActor {
-
-    static public Props props() {
+public class ActorReceptor extends AbstractActor{
+    
+    static public Props props(){
         return Props.create(ActorReceptor.class, () -> new ActorReceptor());
     }
     
     //logging
     private final LoggingAdapter log = Logging.getLogger(getContext().getSystem(), this);
     
-    
+    //contructor de clase
     public ActorReceptor(){
+        
     }
-    
+
+    //funciones de actor
     @Override
     public void preStart(){
         log.info("Actor inciado: |{}|", getSelf().path().name());
@@ -41,13 +43,11 @@ public class ActorReceptor extends AbstractActor {
     public void postStop(){
         log.info("Actor detenido: |{}|", getSelf().path().name());
     }
-
+    
     @Override
     public Receive createReceive() {
         return receiveBuilder()
-                .match(String.class, m -> log.info("Mensaje |{}| recibido desde actor: {}", m, getSender().path().name()))
-                .matchEquals("imprimir", m -> log.info("Mensaje recibido desde actor: {}", getSender().path().name()))
+                .matchEquals("imprimir", m -> log.info("Mensaje recibido desde actor: |{}|", getSender().path().name()))
                 .build();
     }
-    
 }

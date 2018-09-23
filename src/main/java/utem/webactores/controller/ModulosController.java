@@ -31,12 +31,6 @@ public class ModulosController {
         return mv;
     }
     
-    @RequestMapping(value="/modulo1")
-    public ModelAndView modulo1 (){
-        
-        return new ModelAndView("modulos/modulo1");
-    }
-    
     @RequestMapping(value="/modulo2")
     public ModelAndView modulo2 (){
         

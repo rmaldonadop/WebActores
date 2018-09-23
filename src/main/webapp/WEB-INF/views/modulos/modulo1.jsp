@@ -42,20 +42,20 @@
                 <div class="col-md-2"><span class="badge badge-secondary">Escribe tu Mensaje</span></div>
                 <a>Mensaje: </a>
                 <div class="col-md-2"><input class="form-control" id="txtMensaje" type="text" value="enviar" style="width: 100px; height: 30px;"></div>
-                <input type="button" class="btn btn-outline-primary" id="btnEnviar" value="Enviar" style="width: 100px">
+                <button class="btn btn-outline-primary" id="btnEnviar" value="Enviar" style="width: 100px">Enviar</button>
             </div>
             <div class="row">
                 <div class="col-md-12 rounded" style="border: 1px solid; height: 500px;">
                     <canvas id="lienzo1" width="1150" height="500" class="col-md-12">Este navegador no soporta canvas</canvas>
                     <img src="<c:url value="/resources/images/mensaje.png"/>" id="mensaje" style="display: none">
-                    <script src="<c:url value="/resources/js/modulo1.js"/>" </script>
+                    <script src="<c:url value="/resources/js/modulo1.js"/>"></script>
                 </div>
             </div>
         </div>
         
         <!-- Bootstrap core JavaScript -->
-        <script src="<c:url value="/webjars/jquery/3.3.1/dist/jquery.min.js"/>"</script>
-        <script src="<c:url value="/webjars/bootstrap/4.1.0/js/bootstrap.min.js"/>"</script>
+        <script src="<c:url value="/webjars/jquery/3.3.1/dist/jquery.min.js"/>"></script>
+        <script src="<c:url value="/webjars/bootstrap/4.1.0/js/bootstrap.min.js"/>"></script>
         
     </body>
 </html>

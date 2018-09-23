@@ -27,7 +27,7 @@ function loadModulo(){
 document.getElementById("btnIniciar").addEventListener("click", function() {
     if(iniciar){
         window.clearInterval(intervalo);
-        this.value = "Continuar";
+        this.childNodes[0].nodeValue = "Continuar";
         iniciar = false;
     }
     else{
@@ -35,7 +35,7 @@ document.getElementById("btnIniciar").addEventListener("click", function() {
         mensaje2.mensajes = document.getElementById("actor2").value;
         mensaje3.mensajes = document.getElementById("actor3").value;
         intervalo = window.setInterval(function(){frameLoop();},1000/55);
-        this.value = "Pausar";
+        this.childNodes[0].nodeValue = "Pausar";
         iniciar = true;
     }
 });

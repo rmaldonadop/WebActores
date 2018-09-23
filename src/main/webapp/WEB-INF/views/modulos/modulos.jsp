@@ -151,8 +151,8 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="<c:url value="/webjars/jquery/3.3.1/dist/jquery.min.js"/>"</script>
-    <script src="<c:url value="/webjars/bootstrap/4.1.0/js/bootstrap.min.js"/>"</script>
+    <script src="<c:url value="/webjars/jquery/3.3.1/dist/jquery.min.js"/>"></script>
+    <script src="<c:url value="/webjars/bootstrap/4.1.0/js/bootstrap.min.js"/>"></script>
 
   </body>
 
