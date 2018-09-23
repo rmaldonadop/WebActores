@@ -12,23 +12,23 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
+
         <title>Modulo 1</title>
-        
+
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="<c:url value="/webjars/bootstrap/4.1.0/css/bootstrap.min.css"/>" >
 
         <!-- Custom styles for this template -->
         <link rel="stylesheet" href="<c:url value="/resources/css/estilos.css"/>">
-        
+
     </head>
     <body onload="loadModulo()">
         <!-- Navegacion -->
-        <jsp:include page="../layouts/menu.jsp"></jsp:include>
-        
+        <jsp:include page="../layouts/menu.jsp"/>
+
         <div class="container">
             <h2 class="my-4">Modulo 4</h2>
-            
+
             <div class="row">
                 <div class="col-md-12 rounded" style="background-color: #f8f8f8; border: 1px solid; height: 150px;">
                     <h5>Objetivo:</h5>
@@ -56,10 +56,10 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Bootstrap core JavaScript -->
         <script src="<c:url value="/webjars/jquery/3.3.1/dist/jquery.min.js"/>"></script>
         <script src="<c:url value="/webjars/bootstrap/4.1.0/js/bootstrap.min.js"/>"></script>
-        
+
     </body>
 </html>

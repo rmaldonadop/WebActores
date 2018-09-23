@@ -12,9 +12,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
+
         <title>Menu</title>
-        
+
         <link rel="stylesheet" href="<c:url value="/webjars/bootstrap/4.1.0/css/bootstrap.min.css"/>" >
     </head>
     <body>
@@ -46,7 +46,7 @@
                 </div>
             </nav>
         </div>
-                            
+
         <script src="<c:url value="/webjars/jquery/3.3.1/dist/jquery.min.js"/>"></script>
         <script src="<c:url value="/webjars/bootstrap/4.1.0/js/bootstrap.min.js"/>"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>

@@ -12,31 +12,31 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
+
         <title>Modulo 3</title>
-        
+
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="<c:url value="/webjars/bootstrap/4.1.0/css/bootstrap.min.css"/>" >
 
         <!-- Custom styles for this template -->
         <link rel="stylesheet" href="<c:url value="/resources/css/estilos.css"/>">
-        
+
     </head>
     <body onload="loadModulo()">
         <!-- Navegacion -->
-        <jsp:include page="../layouts/menu.jsp"></jsp:include>
-        
+        <jsp:include page="../layouts/menu.jsp"/>
+
         <div class="container">
             <h2 class="my-4">Modulo 3: Cola de Mensajes</h2>
-            
+
             <div class="row rounded" style="background-color: #f8f8f8; border: 1px solid; height: 200px;">
                 <div class="col-md-12">
                     <h5><b>Objetivo:</b></h5>
                     <p>Demostrar el funcionamiento del buzon de mensajes de un actor, cuando recibe multiples mensajes.</p>
                     <h5><b>Descripción:</b></h5>
                     <p>En este modulo, puedes definir la cantidad de mensajes que quieres que envie cada actor indicando la cantidad en cada espacio desigano. 
-                    Una vez hecho esto, al presionar Iniciar, cada actor mensajero enviará la cantidad de mensajes indicada al actor recetor, en cual
-                    los almacenara en su buzon segun orden de llegada.</p>
+                        Una vez hecho esto, al presionar Iniciar, cada actor mensajero enviará la cantidad de mensajes indicada al actor recetor, en cual
+                        los almacenara en su buzon segun orden de llegada.</p>
                 </div>
             </div>
             <li> ID = <c:out value="${id}" /> </li>
@@ -45,7 +45,7 @@
                 <div class="col-md-12">
                     <span class="badge badge-secondary">Opciones</span>
                     <div class="btn-group col-md-8">
-                        <button class="btn btn-outline-primary" onclick="location.href='/webActores/modulo3'" id="btnIniciar" value="Iniciar" style="width: 100px">Iniciar</button>
+                        <button class="btn btn-outline-primary" onclick="location.href = '/webActores/modulo3'" id="btnIniciar" value="Iniciar" style="width: 100px">Iniciar</button>
                         <button class="btn btn-outline-primary" id="btnReiniciar" value="Reiniciar" style="width: 100px">Reiniciar</button>
                     </div> 
                 </div>
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-                
+
         <!-- Bootstrap core JavaScript -->
         <script src="<c:url value="/webjars/jquery/3.3.1/dist/jquery.min.js"/>"></script>
         <script src="<c:url value="/webjars/bootstrap/4.1.0/js/bootstrap.min.js"/>"></script>
