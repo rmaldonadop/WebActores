@@ -4,29 +4,16 @@
     Author     : roberto
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html>
 
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <title>Modelo de actores - Indice</title>
-    </head>
-    <body>
-        <div class="col-lg-3">
-            <h2 class="my-4">Acerca del modelo</h2>
-            <div class="list-group">
-                <a href="<c:url value="/actor-model"/>" class="list-group-item active">Modelo de Actores</a>
-                <a href="<c:url value="/conceptos-basicos"/>" class="list-group-item">Conceptos bÃ¡sicos</a>
-                <a href="<c:url value="/caracteristicas"/>" class="list-group-item">CaracterÃ­sticas</a>
-                <a href="<c:url value="/sincronizacion"/>" class="list-group-item">SincronizaciÃ³n</a>
-                <a href="<c:url value="/propiedades-semanticas"/>" class="list-group-item">Propiedades semÃ¡nticas</a>
-                <a href="<c:url value="/aplicacion-basica"/>" class="list-group-item">AplicaciÃ³n bÃ¡sica</a>
-            </div>
-        </div>
-        <!-- /.col-lg-3 -->
-    </body>
-</html>
+<div class="col-lg-3">
+    <h2 class="my-4">Acerca del modelo</h2>
+    <div class="list-group">
+        <a href="<c:url value="/actor-model"/>" class="list-group-item active">Modelo de Actores</a>
+        <a href="<c:url value="/conceptos-basicos"/>" class="list-group-item">Conceptos básicos</a>
+        <a href="<c:url value="/caracteristicas"/>" class="list-group-item">Características</a>
+        <a href="<c:url value="/sincronizacion"/>" class="list-group-item">Sincronización</a>
+        <a href="<c:url value="/propiedades-semanticas"/>" class="list-group-item">Propiedades semánticas</a>
+        <a href="<c:url value="/aplicacion-basica"/>" class="list-group-item">Aplicación básica</a>
+    </div>
+</div>
