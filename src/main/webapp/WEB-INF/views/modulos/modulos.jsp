@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col-md-7">
                     <a href="<c:url value="/modulo1"/>">
-                        <img class="img-fluid rounded mb-3 mb-md-0" src="<c:url value="/resources/images/miniatura-modulo1.png"/>" alt="">
+                        <img class="img-fluid rounded mb-3 mb-md-0" src="<c:url value="/resources/images/miniatura-modulo1.png"/>" alt="Modulo 1">
                     </a>
                 </div>
                 <div class="col-md-5">
@@ -53,7 +53,7 @@
             <div class="row">
                 <div class="col-md-7">
                     <a href="<c:url value="/modulo2"/>">
-                        <img class="img-fluid rounded mb-3 mb-md-0" src="<c:url value="/resources/images/miniatura-modulo2.png"/>" alt="">
+                        <img class="img-fluid rounded mb-3 mb-md-0" src="<c:url value="/resources/images/miniatura-modulo2.png"/>" alt="Modulo 2">
                     </a>
                 </div>
                 <div class="col-md-5">
@@ -73,7 +73,7 @@
             <div class="row">
                 <div class="col-md-7">
                     <a href="<c:url value="/modulo3"/>">
-                        <img class="img-fluid rounded mb-3 mb-md-0" src="<c:url value="/resources/images/miniatura-modulo3.png"/>" alt="">
+                        <img class="img-fluid rounded mb-3 mb-md-0" src="<c:url value="/resources/images/miniatura-modulo3.png"/>" alt="Modulo 3">
                     </a>
                 </div>
                 <div class="col-md-5">
@@ -95,7 +95,7 @@
 
                 <div class="col-md-7">
                     <a href="<c:url value="/modulo4"/>">
-                        <img class="img-fluid rounded mb-3 mb-md-0" src="<c:url value="/resources/images/miniatura-modulo4.png"/>" alt="">
+                        <img class="img-fluid rounded mb-3 mb-md-0" src="<c:url value="/resources/images/miniatura-modulo4.png"/>" alt="Modulo 4">
                     </a>
                 </div>
                 <div class="col-md-5">

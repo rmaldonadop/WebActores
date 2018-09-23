@@ -58,7 +58,7 @@
                                 de archivo, los servidores de correo, etc. Mientras que sus propósitos varían de unos servicios a otros, la arquitectura básica 
                                 seguirá siendo la misma.</p>
                             <p style="text-align: center">
-                                <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/modelo-cliente-servidor.png"/>">
+                                <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/modelo-cliente-servidor.png"/>" alt="Modelo cliente-servidor">
                             </p>
                             <p><b>Características</b></p>
                             <p>La máquina que desempeña el papel de servidor, es la que tiene en ejecución los programas de servidor, que son aquellos encargados 

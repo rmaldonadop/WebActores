@@ -59,7 +59,7 @@
                                         respuesta.</p></li>
                             </ul>
                             <p style="text-align: center">
-                                <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/mensajeria-tipo-RPC.png"/>">
+                                <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/mensajeria-tipo-RPC.png"/>" alt="Mensajeria tipo RPC">
                             </p>
                             <p>En la figura anterior, se muestra como un actor cliente solicita cotizaciones de múltiples servicios competidores, usando la comunicación 
                                 tipo RPC. Las flechas segmentadas entre el cliente y los servicios representan los mensajes, mientras que las flechas verticales 
@@ -97,7 +97,7 @@
                                 almacenar temporalmente es cambiar el orden en el cual los mensajes son procesados de manera que garantice que la cantidad de mensajes 
                                 que se colocan en la cola de impresión sea siempre mayor que el número de mensajes de “obtener” procesados por la cola de impresión.</p>
                             <p style="text-align: center">
-                                <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/restriccion-local.png"/>">
+                                <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/restriccion-local.png"/>" alt="Restriccion local">
                             </p>
                             <p><i>En la figura 1.3, se muestra la comunicación del archivo de un actor con un cliente que está usando restricciones locales de sincronización. 
                                     Las flechas verticales describen la línea de tiempo de vida del actor y las flechas punteadas representan los mensajes. Las descripciones 
@@ -113,13 +113,13 @@
                                 de pipeline es el procesamiento de una red de imágenes, en la cual una secuencia de imágenes pasa a través de distintas etapas de filtrado y 
                                 transformación. La salida de la última etapa es la secuencia de imágenes procesadas.</p>
                             <p style="text-align: center">
-                                <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/patron-pipeline.png"/>">
+                                <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/patron-pipeline.png"/>" alt="Patron pipeline">
                             </p>
                             <p><b>Dividir y vencer:</b> Método que consiste en dividir un problema en dos o más subproblemas de igual o similar tipo. Dicha división continua 
                                 hasta que los subprocesos llegan a ser lo suficientemente sencillos como para ser resueltos directamente. Luego las soluciones de los subproblemas 
                                 se combinan para dar solución al problema inicial.</p>
                             <p style="text-align: center">
-                                <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/patron-dividir-vencer.png"/>">
+                                <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/patron-dividir-vencer.png"/>" alt="Patron dividir y vencer">
                             </p>
                             <hr>
                             <a href="<c:url value="/caracteristicas"/>" class="btn btn-success">Anterior</a>

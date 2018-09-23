@@ -38,7 +38,7 @@
                             <p>Con la finalidad de mostrar cómo se define un actor en una aplicación, en la siguiente figura, se muestra un ejemplo básico de cómo se 
                                 define un actor. Este ejemplo esta implementado en el lenguaje Scala/Akka</p>
                             <p style="text-align: center">
-                                <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/aplicacion-basica.png"/>">
+                                <img class="img-fluid mb-3 mb-md-0" src="<c:url value="/resources/images/esquemas/aplicacion-basica.png"/>" alt="Aplicacion basica">
                             </p>
                             <p>En el código, se define un actor con el nombre “HelloActor”. El comportamiento del actor “HelloActor” se implementa por la definición 
                                 del método “receive”, el cual se implementa utilizando una expresión “match”. Cuando “helloActor”, recibe el string “hello” como un 

@@ -62,7 +62,7 @@
             <div class="row">
                 <div class="col-md-12 rounded" style="border: 1px solid; height: 500px;">
                     <canvas id="lienzo3" width="1150" height="500" class="col-md-12">Este navegador no soporta canvas</canvas>
-                    <img src="<c:url value="/resources/images/mensaje.png"/>" id="mensaje" style="display: none">
+                    <img src="<c:url value="/resources/images/mensaje.png"/>" id="mensaje" style="display: none" alt="mensaje">
                     <script src="<c:url value="/resources/js/modulo3.js"/>"></script>
                 </div>
             </div>
